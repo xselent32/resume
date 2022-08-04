@@ -6,73 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Резюме - Носырева Анатолия">
     <meta name="keywords" content="nosyrev, resume, cv">
+    <link rel="stylesheet" href="css/style.css">
     <title>Nosyrev Resume</title>
-</head>
-<body>
-    <img src="img/avatar.jpg" width="200" alt="Моя аватарка">
-    <h1>Носырев Анатолий</h1>
-    <p>Изучал по немного <em>разные</em> языки программирования, с наибольшим акцентом на <strong>python</strong></p>
-    <p>Занимался <strong>спортом</strong>, стараюсь всегда <em>держать</em> себя в форме</p>
-    <h4>Список социальных сетей:</h4>
-    <a href="https://vk.com/xselent" target="_blank">Vk</a> |
-    <a href="https://t.me/x_selent" target="_blank">Telegram</a> |
-    <a href="https://ok.ru">Odnoklassniki</a>
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Компьютеры</li>
-        <li>Спорт</li>
-        <li>Собаки</li>
-    </ol>
-    <h2>Опыт работы</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Магазин</td>
-                <td>Охраник</td>
-                <td>2012 - 2012</td>
-            </tr>
-            
-            <tr>
-                <td>Склад</td>
-                <td>Кладовщик</td>
-                <td>2013 - 2013</td>
-            </tr>
-            
-            <tr>
-                <td>Интернет</td>
-                <td>Фрилансер</td>
-                <td>2016 - сейчас</td>
-            </tr>
-        </tbody>
-    </table>
     
-    <h2>Связаться со мной</h2>
-    
-    <form action="/">
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
+    <body>
+        <div class="container">
+            <div class="info-about">
+                <img class="avatar" src="img/avatar.jpg" width="200" alt="Моя аватарка">
+                
+                <div class="info-about-text">
+                    <h1>Носырев Анатолий</h1>
+                    
+                    <p>Изучал по немного разные языки программирования, с&nbsp;наибольшим акцентом на python.</p>
+                    <p>Занимаюсь спортом, стараюсь всегда держать себя в форме.</p>
+                    
+                    <h4>Список социальных сетей:</h4>
+                    <a class="link-social" href="https://vk.com/xselent" target="_blank">Vk</a> |
+                    <a class="link-social" href="https://t.me/x_selent" target="_blank">Telegram</a> |
+                    <a class="link-social" href="https://ok.ru">Odnoklassniki</a>
+                </div>
+            </div>
+            
+            
+            
+            <div class="card bg-green">
+                <h2>Мои хобби</h2>
+                <ol class="list-hobby">
+                    <li>Компьютеры</li>
+                    <li>Спорт</li>
+                    <li>Собаки</li>
+                </ol>
+            </div>
+            
+            <div class="card bg-blue">
+                <h2>Опыт работы</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Название</th>
+                            <th>Должность</th>
+                            <th>Год</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Магазин</td>
+                            <td>Охраник</td>
+                            <td>2012 - 2012</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Склад</td>
+                            <td>Кладовщик</td>
+                            <td>2013 - 2013</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Интернет</td>
+                            <td>Фрилансер</td>
+                            <td>2016 - сейчас</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="card bg-yellow">
+                <h2>Мои курсы</h2>
+                <ul class="list-courses">
+                    <li><a href="#">Получение профессии Frontend Разработчика</a></li>
+                    <li><a href="#">Все курсы</a></li>
+                </ul>
+            </div>
+            
+            <div class="card bg-green">
+                <h2 class="form-title">Связаться со мной</h2>
+                
+                <form action="/" class="form">
+                    <div class="group-input">
+                        <div class="form-group">
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" id="name" placeholder="Введите имя">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Ваш email:</label>
+                            <input type="email" id="email" placeholder="Введите email">
+                        </div>
+                    </div>
+                    
+                    <div class="form-textarea">
+                        <label for="message">Ваше сообщение:</label>
+                        <textarea name="" id="message" cols="20" rows="5" placeholder="Введите сообщение"></textarea>
+                    </div>
+                    
+                        <button class="btn" type="submit">Отправить!</button>
+                </form>
+            </div>
         </div>
-        
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
-        </div>
-        
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea name="" id="message" cols="20" rows="5" placeholder="Введите сообщение"></textarea>
-        </div>
-        
-        <input type="submit" value="Отправить!">
-    </form>
-</body>
-</html>
+    </body>
+    </html>
